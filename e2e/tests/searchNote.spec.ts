@@ -3,7 +3,7 @@ import { NotesPage } from "./Pages/notesPage";
 
 test.describe("Notes View", () => {
   let notesPage: NotesPage;
-  const apiURL = "https://vw-digital-hub.vercel.app";
+  const apiURL = "http://localhost:3004";
   const noteId = crypto.randomUUID();
   
   const createdNote = {

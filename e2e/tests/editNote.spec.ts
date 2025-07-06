@@ -15,7 +15,7 @@ test.describe("Notes Edition", () => {
     notesPage = new NotesPage(page);
 
     const apiContext = await request.newContext();
-    const response = await apiContext.post("https://vw-digital-hub.vercel.app/notes", {
+    const response = await apiContext.post("http://localhost:3004/notes", {
       data: createdNote,
     });
 
@@ -24,7 +24,7 @@ test.describe("Notes Edition", () => {
 
   test.afterEach(async ({ }) => {
     const apiContext = await request.newContext();
-    await apiContext.delete(`https://vw-digital-hub.vercel.app/notes/${noteId}`);
+    await apiContext.delete(`http://localhost:3004/notes/${noteId}`);
   });
 
   test("should edit a note", async () => {
