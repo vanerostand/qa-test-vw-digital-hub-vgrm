@@ -54,4 +54,4 @@ Bugs reporting are documented in the following link:
 
 ### Author
 
-***Vanesa Rostand***
+***Vanesa Rostand Mancera***
