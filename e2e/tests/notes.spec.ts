@@ -8,7 +8,7 @@ test.describe("Notes Page", () => {
     notesPage = new NotesPage(page);
   });
 
-  test("should display the notes page", async () => {
+  test("should navigate notes page", async () => {
     await notesPage.navigateToNotes();
     await expect(notesPage.page).toHaveURL("/notes");
   });
