@@ -12,4 +12,10 @@ test.describe('Home Page', () => {
     await homePage.navigateToHome();
     await expect(homePage.page).toHaveURL('/');
   });
+
+  test('should navigate to home page clicking on the logo', async () => {
+    await homePage.navigateToHome();
+    await homePage.clickLogo();
+    await expect(homePage.page).toHaveURL('/');
+  });
 });
